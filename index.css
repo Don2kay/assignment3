@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+}
+
+.container {
+    padding: 20px;
+    margin: 20px 70px;
+}
+
+/* The beginning of navigation styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+    padding-bottom: 50px;
+}
+
+nav h1 {
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+span {
+    color: #30DC0E;
+}
+/* navigation links styling */
+a {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    margin: 10px
+}
+
+#sign {
+    border-radius: 40px;
+    background-color: #30DC0E;
+    color: white;
+    font-weight: 700;
+    width: 50px;
+    padding: 10px 20px;
+}
+
+/* Content stying start here */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.word {
+    width: 100%;
+    display: inline-block;
+}
+
+.word h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.word p {
+    font-size: 20px;
+    max-width: 500px;
+    line-height: 2;
+    margin-bottom: 30px;
+}
+/* beginning of button styling */
+button {
+    color: #fff;
+    background-color: #30DC0E;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 20px;
+}
+
+button a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.image img{
+    height: 450px;
+}
+/* media query for responsiveness */
+@media screen and (max-width: 1060px) {
+    .wrapper {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    nav {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        width: 200px;
+        margin: 0;
+        padding: 10px 0;
+    }
+    #sign {
+        color: #fff;
+    background-color: #30DC0E;
+    border-radius: 40px;
+    margin: 0;
+    padding: 10px 5px;
+    font-size: 16px;
+    width: 80px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        display: inline-block;
+    }
+}
